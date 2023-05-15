@@ -122,29 +122,29 @@ foreach($error as $error){
   <div class="form-group">
   	
         <label class="label_txt">First Name</label>
-    <input type="text" class="form-control" name="fname" value="<?php if(isset($error)){ echo $_POST['fname'];}?>" required="">
+    <input type="text" class="form-control" placeholder="At least using 3 charaters" name="fname" value="<?php if(isset($error)){ echo $_POST['fname'];}?>" required="">
   </div>
   <div class="form-group">
     <label class="label_txt">Last Name </label>
-    <input type="text" class="form-control" name="lname" value="<?php if(isset($error)){ echo $_POST['lname'];}?>" required="">
+    <input type="text" class="form-control" placeholder="At least using 3 charaters" name="lname" value="<?php if(isset($error)){ echo $_POST['lname'];}?>" required="">
   </div>
  
 <div class="form-group">
     <label class="label_txt">Username </label>
-    <input type="text" class="form-control" name="username" value="<?php if(isset($error)){ echo $_POST['username'];}?>" required="">
+    <input type="text" class="form-control" placeholder="Eg:myusername and myusername123" name="username" value="<?php if(isset($error)){ echo $_POST['username'];}?>" required="">
   </div>
 
 <div class="form-group">
     <label class="label_txt">Email </label>
-    <input type="email" class="form-control" name="email" value="<?php if(isset($error)){ echo $_POST['email'];}?>" required="">
+    <input type="email" class="form-control" placeholder="123@gmail.com" name="email" value="<?php if(isset($error)){ echo $_POST['email'];}?>" required="">
   </div>
   <div class="form-group">
     <label class="label_txt">Password </label>
-    <input type="password" name="password" class="form-control" required="">
+    <input type="password" placeholder="Enter your password" name="password" class="form-control" required="">
   </div>
    <div class="form-group">
     <label class="label_txt">Confirm Password </label>
-    <input type="password" name="passwordConfirm" class="form-control" required="">
+    <input type="password" placeholder="Please confirm your password" name="passwordConfirm" class="form-control" required="">
   </div>
   <button type="submit" name="signup" class="btn btn-primary btn-group-lg form_btn">SignUp</button>
    <p>Have an account?  <a href="login.php">Log in</a> </p>
